@@ -57,10 +57,9 @@
                     <div class="d-block text-light p-3 border-0">
                         Iteracion 1
                     </div>
-                    <a href="reglasNegocio.html" .html" class="d-block text-light p-3 border-0"><i
+                    <a href="reglasNegocio.html" class="d-block text-light p-3 border-0"><i
                             class="icon ion-md-book mr-2"></i></i>
                         Reglas de negocio</a>
-
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link text-light dropdown-toggle p-3 border-0" href="#" id="navbarDropdown"
@@ -77,7 +76,6 @@
                             </div>
                         </li>
                     </ul>
-
 
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li class="nav-item dropdown">
@@ -110,7 +108,7 @@
                                 Modelo de dominio
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="heuristica.html">Heurísticas del descubrimiento
+                                <a class="dropdown-item" href="#">Heurísticas del descubrimiento
                                     de abstracciones clave del sistema</a>
                                 <a class="dropdown-item" href="CRCs.html">Tarjetas CRC</a>
 
@@ -154,9 +152,8 @@
             <!-- Topbar -->
             <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
                 <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                    <i class="fa fa-bars"></i>
                 </button>
-                <h1 class="h3 mb-2 text-gray-800">Diagrama de casos de uso</h1>
+                <h1 class="h3 mb-2 text-gray-800">Reglas de negocio</h1>
             </nav>
             <!-- End of Topbar -->
             <!-- Fin Navbar -->
@@ -164,46 +161,80 @@
 
 
             <!-- Page Content -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="d-block card-header py-3" role="button">
-                                <h6 class="m-0 font-weight-bold text-primary">
-                                    <div>
-                                        <i class="fas fa-clone mr-2"></i>Diagrama de casos de uso
-                                </h6>
-                                <div class="card-body">
-                                    <div class="text-center">
-                                        <img src="assets/img/diagramaCasosUso.png" class="imgHeu">
-                                    </div>
+            <div class="container-fluid text-gray-900">
+                <div class="col">
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Reglas de negocio</h6>
+                        </div>
+                        <div class="card-body">
+                            <p>RN1. Todos los productos contarán con imagen, la cual será capturada y subida por el
+                                administrador.</br></br>
+                                RN2. Se deberá armar un archivo con extensión pdf que muestre información de los
+                                productos,
+                                este será enviado manualmente por el administrador mediante el medio que considere de su
+                                preferencia.</br></br>
+                                RN3. Por cada venta se hará un registro con información del cliente, del producto y
+                                otros
+                                datos adicionales, como forma de pago, fecha de compra y tipo de transacción.</br></br>
+                                RN4. Si el pago se hace en la modalidad de parcialidades, entonces el administrador
+                                actualizará en el sistema los pagos que se vayan realizando por los clientes.
+                                </br></br>
+                                RN5. El sistema nos mostrará elementos del producto de manera organizada, como por
+                                ejemplo:
+                                una imagen clara y sofisticada del producto (capturada y subida por el usuario maestro),
+                                datos adicionales, como forma de pago, fecha de compra y tipo de transacción:.
+                                nombre del producto, precio y disponibilidad.</br></br>
+                                RN6. El sistema tendrá la capacidad de permitir a un cliente de la tienda iniciar sesión
+                                en
+                                el sistema con un identificador que será su usuario y una contraseña.</br></br>
+                                RN7. El sistema proveerá la capacidad de permitir a un cliente de la tienda y al
+                                administrador cerrar la sesión del sistema.</br></br>
+                                RN8. El usuario y la contraseña se utiliza para determinar qué tipo de usuario inicia
+                                sesión
+                                (administrador ó cliente).</br></br>
+                                RN9. Únicamente el administrador podrá realizar operaciones que le permitan añadir
+                                información, consultarla, ordenarla, visualizarla o eliminarla.</br></br>
+                                RN10. Los clientes podrán dar de baja productos del carrito de compra.</br></br>
+                                RN11. Se requiere que el cliente pueda buscar productos por un nombre específico o ya
+                                sea
+                                por una categoría ya establecida.</br></br>
+                                RN12. Los registros de clientes y proveedores no pueden repetirse, para no tener
+                                registros
+                                duplicados.</br></br>
 
-                                </div>
-                            </div>
+                            </p>
+
+
+
                         </div>
                     </div>
-
-
-
-                    <!--Final page content-->
-
-
-
-
-                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                        crossorigin="anonymous"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                        crossorigin="anonymous"></script>
-                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                        crossorigin="anonymous"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
-                        integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
-                        crossorigin="anonymous"></script>
                 </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--Final page content-->
+
+
+
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
+            integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>
