@@ -88,7 +88,7 @@
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Actores</a>
                                 <a class="dropdown-item" href="#">Casos de uso</a>
-                                <a class="dropdown-item" href="#">Diagrama de casos de uso</a>
+                                <a class="dropdown-item" href="diagramaCasosUso.html">Diagrama de casos de uso</a>
                             </div>
                         </li>
                     </ul>
@@ -110,10 +110,10 @@
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Heurísticas del descubrimiento
                                     de abstracciones clave del sistema</a>
-                                <a class="dropdown-item" href="CRC.html">Tarjetas CRC</a>
+                                <a class="dropdown-item" href="CRCs.html">Tarjetas CRC</a>
                                 <a class="dropdown-item" href="#">Diagrama de clases</a>
                                 <a class="dropdown-item" href="#">Diagrama de actividades</a>
-                                <a class="dropdown-item" href="#">Diagrama de paquetes</a>
+                                <a class="dropdown-item" href="diagramaPaquete.html">Diagrama de paquetes</a>
                             </div>
                         </li>
                     </ul>
@@ -127,7 +127,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Diagrama de objetos</a>
-                                <a class="dropdown-item" href="#">Diagrama de máquinas de
+                                <a class="dropdown-item" href="maquinasEdos.html">Diagrama de máquinas de
                                     estado</a>
                                 <a class="dropdown-item" href="#">Análisis de robustez</a>
                                 <a class="dropdown-item" href="#">Diagrama de secuencia</a>
@@ -219,7 +219,7 @@
                     </a>
                     <div class="collapse" id="collapse2">
                         <div class="card-body">
-                            <p>Búsqueda de artículos en catálogo
+                            <p>Nombre: Búsqueda de artículos en catálogo
 
                             </p>
                             <p>Identificador: CU2</p>
@@ -251,7 +251,7 @@
                                 5. El sistema muestra los artículos en pantalla <br />
 
                             </p>
-                            <p>Curso alternativo A: <br />El sistema no encuentra alguna coincidencia <br />
+                            <p>Curso alternativo A: El sistema no encuentra alguna coincidencia <br />
                                 A.4 El sistema muestra en pantalla un mensaje diciendo que ningún elemento
                                 coincide<br />
                                 A.5 El caso de uso termina <br />
@@ -276,7 +276,7 @@
                     </a>
                     <div class="collapse" id="collapse3">
                         <div class="card-body">
-                            <p>Consultar catálogo
+                            <p>Nombre: Consultar catálogo
 
                             </p>
                             <p>Identificador: CU3</p>
@@ -327,7 +327,7 @@
                     </a>
                     <div class="collapse" id="collapse4">
                         <div class="card-body">
-                            <p>Añadir artículos a solicitud
+                            <p>Nombre: Añadir artículos a solicitud
                             </p>
                             <p>Identificador: CU4</p>
                             <p>Descripción:
@@ -354,7 +354,7 @@
                                 de compra<br />
                                 <br />
                             </p>
-                            <p>Curso alternativo A: <br />El artículo ya existía en la solicitud<br />
+                            <p>Curso alternativo A: El artículo ya existía en la solicitud<br />
                                 A.2 El sistema suma las cantidades anteriores a las actualmente añadidas y no se crea
                                 una nueva línea en la solicitud<br />
                                 A.3 El caso de uso continúa en el paso 4 en el curso básico de acción <br />
@@ -376,9 +376,9 @@
                         <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-address-book mr-2"></i>CU5
                         </h6>
                     </a>
-                    <div class="collapse" id="collapse4">
+                    <div class="collapse" id="collapse5">
                         <div class="card-body">
-                            <p>Enviar pedido
+                            <p>Nombre: Enviar pedido
                             </p>
                             <p>Identificador: CU5</p>
                             <p>Descripción:
@@ -416,12 +416,138 @@
             <div class="col">
                 <div class="card shadow mb-4">
                     <!-- Card Header - Accordion -->
-                    <a href="#collapse4" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                    <a href="#collapse6" class="d-block card-header py-3" data-toggle="collapse" role="button"
                         aria-expanded="true" aria-controls="collapseCardExample">
-                        <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-address-book mr-2"></i>CU4
+                        <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-address-book mr-2"></i>CU6
                         </h6>
                     </a>
-                    <div class="collapse" id="collapse4">
+                    <div class="collapse" id="collapse6">
+                        <div class="card-body">
+                            <p>Nombre: Alta de cliente
+                            </p>
+                            <p>Identificador: CU6</p>
+                            <p>Descripción:
+                                El cliente desea darse de alta en el sistema
+
+                            </p>
+                            <p>Actores:
+                                Usuario y sistema
+                            </p>
+                            <p>Precondiciones:
+                                El cliente debe encontrarse navegando dentro de la aplicación
+                            </p>
+                            <p>Post-condiciones:
+                                El nuevo cliente es creado en el sistema
+
+                            </p>
+                            <p>Disparador:
+                                El cliente selecciona la opción de darse de alta en la plataforma
+
+                            </p>
+                            <p>Curso básico de acción: <br />
+                                1. El cliente selecciona la opción de darse de alta en el sistema<br />
+                                2. El sistema le muestra un formulario con los datos que debe rellenar para poder
+                                acceder al sistema<br />
+                                3. El cliente rellena los datos del formulario y pulsa el botón de aceptar [Curso alt
+                                A]<br />
+                                4. El sistema comprueba que todos los datos son correctos [Curso alt B]<br />
+                                5. El sistema indica al usuario que el proceso de alta ha sido correcto y ya puede
+                                acceder a la plataforma con sus datos<br />
+
+                            </p>
+                            <p>Curso alternativo A: El cliente no rellena todos los datos solicitados<br />
+                                A.3 El sistema muestra un mensaje de error al cliente indicando que hacen falta datos
+                                <br />
+                                A.4 El caso de uso continúa en el paso 2 en el curso básico de acción <br />
+
+                            </p>
+                            <p>Curso alternativo B: El sistema determina que los datos son incorrectos o ya
+                                existen<br />
+                                B.4 El sistema muestra un mensaje de error al cliente indicando que los datos son
+                                incorrectos o ya existen<br />
+                                B.5 El caso de uso continúa en el paso 2 en el curso básico de acción <br />
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="col">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Accordion -->
+                    <a href="#collapse7" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                        aria-expanded="true" aria-controls="collapseCardExample">
+                        <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-address-book mr-2"></i>CU7
+                        </h6>
+                    </a>
+                    <div class="collapse" id="collapse7">
+                        <div class="card-body">
+                            <p>Nombre: Pedir información automática
+
+                            </p>
+                            <p>Identificador: CU7</p>
+                            <p>Descripción:
+                                Consultar dudas respecto a los productos o respecto a las entregas
+
+                            </p>
+                            <p>Actores:
+                                Usuario y sistema
+                            </p>
+                            <p>Precondiciones:
+                                El cliente debe encontrarse navegando dentro de la aplicación
+
+                            </p>
+                            <p>Post-condiciones:
+                                El cliente recibe una respuesta automática del sistema al elegir la pregunta que desea
+                                hacer
+
+                            </p>
+                            <p>Disparador:
+                                El cliente selecciona la opción de contactar con la administradora
+
+                            </p>
+                            <p>Curso básico de acción: <br />
+                                1. El cliente selecciona la opción de contacto a administradora
+                                <br />
+                                2. El sistema le muestra un formulario de preguntas que puede realizar
+                                <br />
+                                3.El cliente elige una opción [Curso alt A]
+                                <br />
+                                4. El cliente presiona el botón de enviar pregunta
+                                <br />
+                                5. El sistema muestra en pantalla la respuesta a dicha pregunta seleccionada
+
+                                <br />
+                            </p>
+                            <p>Curso alternativo A: El cliente no desea hacer una pregunta<br />
+                                A.3 El sistema muestra un botón para salir de la opción de contacto <br />
+                                A.4 El caso de uso termina <br />
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Accordion -->
+                    <a href="#collapse8" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                        aria-expanded="true" aria-controls="collapseCardExample">
+                        <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-address-book mr-2"></i>CU8
+                        </h6>
+                    </a>
+                    <div class="collapse" id="collapse8">
                         <div class="card-body">
                             <p>Añadir artículos a solicitud
                             </p>
@@ -437,28 +563,277 @@
                                 búsqueda directa y estar registrado en el sistema
                             </p>
                             <p>Post-condiciones:
-                                El artículo seleccionado se añade a una nueva solicitud
+                                El administrador da de alta, baja ó modifica registros en el catálogo de la tienda
+
                             </p>
                             <p>Disparador:
-                                El cliente selecciona la opción de añadir un artículo a una solicitud
+                                Selección de opción de administrar catálogo
                             </p>
                             <p>Curso básico de acción: <br />
-                                1. El cliente selecciona el/los artículos en que está interesado<br />
-                                2. El cliente pulsa en añadir el artículo a una solicitud [Curso alt A]<br />
-                                3. El sistema crea una nueva línea en la solicitud<br />
-                                4. El sistema indica al usuario que se ha procedido a añadir el artículo a su solicitud
-                                de compra<br />
+                                1. Dentro de la aplicación, el administrador elige la opción de administrar catálogo
                                 <br />
+                                2. El sistema muestra un CRUD de los artículos que existen en el catálogo y muestra tres
+                                opciones que se pueden elegir: alta de producto, baja de producto o modificación de
+                                producto.<br />
+                                3. El administrador pulsa en las opciones disponibles por cada producto
+                                <br />
+                                4. El sistema muestra un mensaje para volver a la pantalla principal
+                                <br />
+                                5. El administrador elige la opción de regresar<br />
                             </p>
-                            <p>Curso alternativo A: <br />El artículo ya existía en la solicitud<br />
-                                A.2 El sistema suma las cantidades anteriores a las actualmente añadidas y no se crea
-                                una nueva línea en la solicitud<br />
-                                A.3 El caso de uso continúa en el paso 4 en el curso básico de acción <br />
+                            <p>Curso alternativo A: El administrador elige la opción de dar de alta producto<br />
+                            </p>
+                            A.3 El sistema muestra un formulario con los datos requeridos para dar de alta un producto
+                            <br />
+                            </p>
+                            A.4 El administrador rellena los campos requeridos y envía los datos<br />
+                            </p>
+                            A.5 El sistema muestra en pantalla que se ha agregado exitosamente el artículo<br />
+                            </p>
+                            A.6 El caso de uso continúa en el paso 4 en el curso básico de acción<br />
+                            </p>
+                            <p>Curso alternativo B: El administrador elige la opción de dar de baja un producto<br />
+                                A.3 El sistema muestra en pantalla que se ha eliminado exitosamente el artículo
+                                elegido<br />
+                                A.4 El caso de uso continúa en el paso 4 en el curso básico de acción<br />
+
+                            </p>
+                            <p>Curso alternativo C:El administrador elige la opción de modificar un producto<br />
+                                A.3 El sistema muestra un formulario con los datos actuales del artículo elegido<br />
+                                A.4 El administrador modifica los datos que desee y pulsa en enviar<br />
+                                A.5 El sistema muestra en pantalla que se ha modificado el registro con éxito<br />
+                                A.6 El caso de uso continúa en el paso 4 en el curso básico de acción<br />
+                            </p>
+
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
+
+
+            <div class="col">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Accordion -->
+                    <a href="#collapse9" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                        aria-expanded="true" aria-controls="collapseCardExample">
+                        <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-address-book mr-2"></i>CU9
+                        </h6>
+                    </a>
+                    <div class="collapse" id="collapse9">
+                        <div class="card-body">
+                            <p>Nombre: Administración de registros de cliente
+
+                            </p>
+                            <p>Identificador: CU9</p>
+                            <p>Descripción:
+                                Control de registros de clientes
+                            </p>
+                            <p>Actores:
+                                Usuario y sistema
+                            </p>
+                            <p>Precondiciones:
+                                Haber realizado una identificación válida en el sistema como administrador
+
+                            </p>
+                            <p>Post-condiciones:
+                                El administrador da de alta, baja ó modificar registros de clientes en el sistema
+                            </p>
+                            <p>Disparador:
+                                Selección de opción de administrar clientes
+
+                            </p>
+                            <p>Curso básico de acción: <br />
+                                1. Dentro de la aplicación, el administrador elige la opción de administrar clientes
+                                <br />
+                                2.El sistema muestra un CRUD de los clientes dados de alta en el sistema y muestra tres
+                                opciones que se pueden elegir: alta de cliente, baja de cliente o modificación de
+                                cliente.
+                                <br />
+                                3. El administrador pulsa en las opciones disponibles por cada cliente<br />
+                                4. El sistema muestra un mensaje para volver a la pantalla principal
+                                <br />
+                                5. El administrador elige la opción de regresar
+                                <br />
+                            </p>
+                            <p>Curso alternativo A:El administrador elige la opción de dar de alta cliente<br />
+                                A.3 El sistema muestra un formulario con los datos requeridos para dar de alta un
+                                cliente<br />
+                                A.4 El administrador rellena los campos requeridos y envía los datos<br />
+                                A.5 El sistema muestra en pantalla que se ha registrado exitosamente al cliente<br />
+                                A.6 El caso de uso continúa en el paso 4 en el curso básico de acción
+
+                            </p>
+                            <p>Curso alternativo B:El administrador elige la opción de dar de baja un cliente<br />
+                                B.3 El sistema muestra en pantalla que se ha eliminado exitosamente el cliente
+                                elegido<br />
+                                B.4 El caso de uso continúa en el paso 4 en el curso básico de acción<br />
+
+                            </p>
+                            <p>Curso alternativo C:Curso alternativo C: El administrador elige la opción de modificar
+                                datos de un cliente<br />
+                                C.3 El sistema muestra un formulario con los datos actuales del cliente elegido<br />
+                                C.4 El administrador modifica los datos que desee y pulse en enviar<br />
+                                C.5 El sistema muestra en pantalla que se han modificado los datos del cliente con
+                                éxito<br />
+                                C.6 El caso de uso continúa en el paso 4 en el curso básico de acción<br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Accordion -->
+                    <a href="#collapse10" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                        aria-expanded="true" aria-controls="collapseCardExample">
+                        <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-address-book mr-2"></i>CU10
+                        </h6>
+                    </a>
+                    <div class="collapse" id="collapse10">
+                        <div class="card-body">
+                            <p>
+                                Nombre: Administración de registros de pedidos
+
+                            </p>
+                            <p>Identificador: CU10</p>
+                            <p>Descripción:
+                                Control de registros de pedidos
+                            </p>
+                            <p>Actores:
+                                Administrador y sistema
+                            </p>
+                            <p>Precondiciones:
+                                Haber realizado una identificación válida en el sistema como administrador
+
+                            </p>
+                            <p>Post-condiciones:
+                                El administrador da de alta, baja ó modificar registros de pedidos en el sistema
+
+                            </p>
+                            <p>Disparador:
+                                Selección de opción de administrar pedidos
+
+                            </p>
+                            <p>Curso básico de acción: <br />
+                                1.Dentro de la aplicación, el administrador elige la opción de administrar pedidos
+                                <br />
+                                2. El sistema muestra un CRUD de los pedidos dados de alta en el sistema y muestra tres
+                                opciones que se pueden elegir: alta de pedido, baja de pedido o modificación de pedido
+                                <br />
+                                3. El administrador pulsa en las opciones disponibles por cada pedido
+                                <br />
+                                4. El sistema muestra un mensaje para volver a la pantalla principal
+                                <br />
+                                5. El administrador elige la opción de regresar
+
+                                <br />
+                            </p>
+                            <p>Curso alternativo A: El administrador elige la opción de dar de alta pedido <br />
+                                A.3 El sistema muestra un formulario con los datos requeridos para dar de alta un pedido
+                                <br />
+                                A.4 El administrador rellena los campos requeridos y envía los datos <br />
+                                A.5 El sistema muestra en pantalla que se ha registrado exitosamente el pedido <br />
+                                A.6 El caso de uso continúa en el paso 4 en el curso básico de acción
+                                <br />
+                            </p>
+                            <p>Curso alternativo B: El administrador elige la opción de dar de baja un pedido<br />
+                                B.3 El sistema muestra en pantalla que se ha eliminado exitosamente el pedido
+                                elegido<br />
+                                B.4 El caso de uso continúa en el paso 4 en el curso básico de acción<br />
+
+                            </p>
+                            <p>Curso alternativo C: El administrador elige la opción de modificar datos de un
+                                pedido<br />
+                                C.3 El sistema muestra un formulario con los datos actuales del pedido elegido<br />
+                                C.4 El administrador modifica los datos que desee y pulse en enviar<br />
+                                C.5 El sistema muestra en pantalla que se han modificado los datos del pedido con
+                                éxito<br />
+                                C.6 El caso de uso continúa en el paso 4 en el curso básico de acción<br />
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Accordion -->
+                    <a href="#collapse11" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                        aria-expanded="true" aria-controls="collapseCardExample">
+                        <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-address-book mr-2"></i>CU11
+                        </h6>
+                    </a>
+                    <div class="collapse" id="collapse11">
+                        <div class="card-body">
+                            <p>Nombre: Generar clave de producto
+                            </p>
+                            <p>Identificador: CU11</p>
+                            <p>Descripción:
+                                Generación de claves únicas para productos
+                            </p>
+                            <p>Actores:
+                                Sistema
+                            </p>
+                            <p>Precondiciones:
+                                Se debe enviar una petición de dar de alta producto
+
+                            </p>
+                            <p>Post-condiciones:
+                                Se crea una clave única para el producto
+
+                            </p>
+                            <p>Disparador:
+                                El administrador envía una solicitud para dar de alta un producto
+
+                            </p>
+                            <p>Curso básico de acción: <br />
+                                1. El sistema crea una cadena vacía para almacenar datos de la clave
+                                <br />
+                                2. El sistema obtiene el número de compras en el mes en que se haga el alta, le suma un
+                                valor de 1 y finalmente lo agrega al comienzo de la cadena [Curso alt A]
+                                <br />
+                                3. El sistema agrega a la cadena la letra (mayúscula) del mes actual en que se realiza
+                                el alta. Teniendo en cuenta que la letra correspondiente sigue el siguiente criterio:
+                                enero = A, febrero= B y así consecutivamente hasta diciembre.
+                                <br />
+                                4. El sistema agrega a la cadena el número que corresponde al año en que se realiza el
+                                alta. Siguiendo el siguiente formato: 9 para el año 2019, 20 para el año 2020 y 21 para
+                                el año 2021.
+                                <br />
+                                5. El sistema obtiene cuantos productos similares se han vendido en el mes y año actual,
+                                le suma el valor de 1 y lo agrega a la cadena [Curso alt B]
+                                <br />
+                                6. Se crea exitosamente la clave del producto
+                            </p>
+                            <p>Curso alternativo A: No se ha realizado una compra en el mes actual<br />
+                                A.3 El sistema agrega el valor 1 al comienzo de la cadena vacía<br />
+                                A.4 El caso de uso continúa en el paso 3 en el curso básico de acción <br />
+                            </p>
+                            <p>Curso alternativo A: No se ha realizado una compra de un producto similar en el mes y año
+                                actual
+                                B.3 El sistema agrega el carácter 1 a la cadena
+                                B.4 El caso de uso continúa en el paso 6 en el curso básico de acción
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
 
 
 

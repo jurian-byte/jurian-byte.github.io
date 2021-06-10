@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
+    <link rel="stylesheet" href="assets/css/bootstrap-magic.css">
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -19,11 +20,13 @@
     <!-- Ionic icons -->
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
+    <!-- Font awesome icons -->
+    <script src="https://kit.fontawesome.com/a39da508b8.js" crossorigin="anonymous"></script>
+
     <title>Itzamara Store</title>
 </head>
 
 <body id=page-top;>
-
     <div class="d-flex" id="content-wrapper">
 
         <!-- Sidebar -->
@@ -41,11 +44,14 @@
                     <a href="index.html" class="d-block text-light p-3 border-0"><i
                             class="icon ion-md-apps lead mr-2"></i>
                         Descripción del proyecto</a>
-                    <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-contacts lead mr-2"></i>
+                    <a href="stakeholders.html" class="d-block text-light p-3 border-0"><i
+                            class="icon ion-md-contacts lead mr-2"></i>
                         Stake holders</a>
-                    <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-calendar mr-2"></i>
+                    <a href="modelodeprocesos.html" class="d-block text-light p-3 border-0"><i
+                            class="icon ion-md-calendar mr-2"></i>
                         Modelo de procesos de desarrollo</a>
-                    <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-build lead mr-2"></i>
+                    <a href="herramientasEmpleadas.html" class="d-block text-light p-3 border-0"><i
+                            class="icon ion-md-build lead mr-2"></i>
                         Herramientas de software empleadas</a>
 
                     <div class="d-block text-light p-3 border-0">
@@ -61,9 +67,11 @@
                                 Reglas de negocio
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Requerimientos funcionales (RF)</a>
-                                <a class="dropdown-item" href="#">Requerimientos no funcionales(RNF)</a>
-                                <a class="dropdown-item" href="#">Restricciones(RX)</a>
+                                <a class="dropdown-item" href="requisitosFuncionales.html">Requerimientos funcionales
+                                    (RF)</a>
+                                <a class="dropdown-item" href="requisitosNoFuncionales.html">Requerimientos no
+                                    funcionales(RNF)</a>
+                                <a class="dropdown-item" href="requrimientosSistema.html">Restricciones(RX)</a>
                             </div>
                         </li>
                     </ul>
@@ -79,8 +87,8 @@
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Actores</a>
-                                <a class="dropdown-item" href="#">Casos de uso</a>
-                                <a class="dropdown-item" href="#">Diagrama de casos de uso</a>
+                                <a class="dropdown-item" href="casosUso.html">Casos de uso</a>
+                                <a class="dropdown-item" href="diagramaCasosUso.html">Diagrama de casos de uso</a>
                             </div>
                         </li>
                     </ul>
@@ -100,12 +108,12 @@
                                 Modelo de dominio
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Heurísticas del descubrimiento
+                                <a class="dropdown-item" href="heuristica.html">Heurísticas del descubrimiento
                                     de abstracciones clave del sistema</a>
                                 <a class="dropdown-item" href="CRC.html">Tarjetas CRC</a>
                                 <a class="dropdown-item" href="#">Diagrama de clases</a>
                                 <a class="dropdown-item" href="#">Diagrama de actividades</a>
-                                <a class="dropdown-item" href="#">Diagrama de paquetes</a>
+                                <a class="dropdown-item" href="diagramaPaquete.html">Diagrama de paquetes</a>
                             </div>
                         </li>
                     </ul>
@@ -119,7 +127,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Diagrama de objetos</a>
-                                <a class="dropdown-item" href="#">Diagrama de máquinas de
+                                <a class="dropdown-item" href="maquinasEdos.html">Diagrama de máquinas de
                                     estado</a>
                                 <a class="dropdown-item" href="#">Análisis de robustez</a>
                                 <a class="dropdown-item" href="#">Diagrama de secuencia</a>
@@ -134,6 +142,10 @@
 
         <!-- Fin sidebar -->
 
+
+
+        <!--page content-->
+
         <div class="w-100">
 
             <!-- Navbar -->
@@ -142,10 +154,13 @@
                 <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                     <i class="fa fa-bars"></i>
                 </button>
-                <h1 class="h3 mb-2 text-gray-800">Tarjetas CRC</h1>
+                <h1 class="h3 mb-2 text-gray-800">Descripción del proyecto</h1>
             </nav>
             <!-- End of Topbar -->
             <!-- Fin Navbar -->
+
+
+
             <!-- Page Content -->
 
             <div class="container-fluid text-gray-900">
@@ -260,7 +275,13 @@
         </div>
 
 
-        <!-- Optional JavaScript -->
+
+
+        <!--Final page content-->
+
+
+
+
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -273,10 +294,7 @@
             crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
             integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
-
-
-
-
+    </div>
 </body>
 
 </html>
