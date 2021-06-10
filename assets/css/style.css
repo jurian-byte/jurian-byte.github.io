@@ -1,5 +1,5 @@
 :root {
-    --primary: #111b54;
+    --primary: #283593;
     --light: #ffffff;
     --grey: #efefef;
 }
@@ -66,8 +66,13 @@ a:hover {
 }
 
 .imgRedonda {
-    width: 200px;
-    height: 200px;
+    width: 80%;
+    height: 80%;
     border-radius: 160px;
-    border: 10px solid #666;
+    border: 7px solid #666;
+}
+
+.imgHeu {
+    width: 100%;
+    height: 100%;
 }

@@ -69,9 +69,8 @@
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="requisitosFuncionales.html">Requerimientos funcionales
                                     (RF)</a>
-                                <a class="dropdown-item" href="requisitosNoFuncionales.html">Requerimientos no
-                                    funcionales(RNF)</a>
-                                <a class="dropdown-item" href="requrimientosSistema.html">Restricciones(RX)</a>
+                                <a class="dropdown-item" href="#">Requerimientos no funcionales(RNF)</a>
+                                <a class="dropdown-item" href="#">Restricciones(RX)</a>
                             </div>
                         </li>
                     </ul>
@@ -87,7 +86,7 @@
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Actores</a>
-                                <a class="dropdown-item" href="casosUso.html">Casos de uso</a>
+                                <a class="dropdown-item" href="#">Casos de uso</a>
                                 <a class="dropdown-item" href="#">Diagrama de casos de uso</a>
                             </div>
                         </li>
@@ -108,7 +107,7 @@
                                 Modelo de dominio
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="heuristica.html">Heurísticas del descubrimiento
+                                <a class="dropdown-item" href="#">Heurísticas del descubrimiento
                                     de abstracciones clave del sistema</a>
                                 <a class="dropdown-item" href="CRC.html">Tarjetas CRC</a>
                                 <a class="dropdown-item" href="#">Diagrama de clases</a>
@@ -152,9 +151,8 @@
             <!-- Topbar -->
             <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
                 <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                    <i class="fa fa-bars"></i>
                 </button>
-                <h1 class="h3 mb-2 text-gray-800">Descripción del proyecto</h1>
+                <h1 class="h3 mb-2 text-gray-800">Reglas de negocio</h1>
             </nav>
             <!-- End of Topbar -->
             <!-- Fin Navbar -->
@@ -162,93 +160,58 @@
 
 
             <!-- Page Content -->
-            <div class="col">
-                <div class="card shadow mb-4">
-                    <!-- Card Header - Accordion -->
-                    <a href="#collapse1" class="d-block card-header py-3" data-toggle="collapse" role="button"
-                        aria-expanded="true" aria-controls="collapseCardExample">
-                        <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-eye mr-2"></i>Visión del
-                            producto
-                        </h6>
-                    </a>
-                    <div class="collapse" id="collapse1">
+            <div class="container-fluid text-gray-900">
+                <div class="col">
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Restricciones</h6>
+                        </div>
                         <div class="card-body">
-                            <p>Doña cuquita es una mujer emprendedora que se ha dedicado a la venta por catálogo de
-                                diversos productos, ella necesita un sistema informático con interfaz web que le
-                                permita mostrar un catálogo por el cual se le permitirá promocionar sus productos.
+                            <p>RX1. No se maneja el carácter “ñ” en ningún campo de formulario, se validan los
+                                formularios al momento de los envíos para verificar que este carácter no se encuentre y
+                                en caso de que exista, se evitará el envío.
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card shadow mb-4">
-                    <!-- Card Header - Accordion -->
-                    <a href="#collapse2" class="d-block card-header py-3" data-toggle="collapse" role="button"
-                        aria-expanded="true" aria-controls="collapseCardExample">
-                        <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-search-plus mr-2"></i>Prespectiva
-                            del producto
-                        </h6>
-                    </a>
-                    <div class="collapse" id="collapse2">
-                        <div class="card-body">
-                            <p>Se proyecta implementar un sistema web que permite almacenar información de los
-                                productos como son, precio, descripción y de manera opcional al menos una imagen
-                                del producto. El sistema web a implementar será independiente ya que no tendrá
-                                relación con otros sistemas.
-
+                            <p>RX2. Para los registros de venta hechos por los clientes, la fecha en la que se realice
+                                dicha venta se añadirá al registro de manera automática.
                             </p>
+                            <p>RX3. El sistema crea un archivo xml en caso de que no exista uno en el sistema cuando se
+                                realice una acción de registro.
+                            </p>
+                            <p>RX4. Si no existe un archivo PDF, se crea de manera automática, pero si este ya existe se
+                                sobrescribe con los datos actualizados.
+                            </p>
+                            <p>RX5. Cada vez que se elimine un registro de cualquier archivo xml, los identificadores de
+                                cada registro se actualizarán para mantener la persistencia de los datos.
+                            </p>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card shadow mb-4">
-                    <!-- Card Header - Accordion -->
-                    <a href="#collapse3" class="d-block card-header py-3" data-toggle="collapse" role="button"
-                        aria-expanded="true" aria-controls="collapseCardExample">
-                        <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-cogs mr-2"></i>Funciones del
-                            producto
-                        </h6>
-                    </a>
-                    <div class="collapse" id="collapse3">
-                        <div class="card-body">
-                            <div class="card-body">
-                                <p>El sistema permite:</p>
-                                <li type="disc">Registrar clientes.</li>
-                                <li type="disc">Anadir información.</li>
-                                <li type="disc">Consultar información.</li>
-                                <li type="disc">Ordenar información.</li>
-                                <li type="disc">Visualizar productos.</li>
-                                <li type="disc">Visualizar ordenes.</li>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <!--Final page content-->
-
-
-
-
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
-                integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
         </div>
+
+
+
+
+
+        <!--Final page content-->
+
+
+
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
+            integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>

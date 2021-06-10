@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
+    <link rel="stylesheet" href="assets/css/bootstrap-magic.css">
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -43,11 +44,14 @@
                     <a href="index.html" class="d-block text-light p-3 border-0"><i
                             class="icon ion-md-apps lead mr-2"></i>
                         Descripción del proyecto</a>
-                    <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-contacts lead mr-2"></i>
+                    <a href="stakeholders.html" class="d-block text-light p-3 border-0"><i
+                            class="icon ion-md-contacts lead mr-2"></i>
                         Stake holders</a>
-                    <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-calendar mr-2"></i>
+                    <a href="modelodeprocesos.html" class="d-block text-light p-3 border-0"><i
+                            class="icon ion-md-calendar mr-2"></i>
                         Modelo de procesos de desarrollo</a>
-                    <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-build lead mr-2"></i>
+                    <a href="herramientasEmpleadas.html" class="d-block text-light p-3 border-0"><i
+                            class="icon ion-md-build lead mr-2"></i>
                         Herramientas de software empleadas</a>
 
                     <div class="d-block text-light p-3 border-0">
@@ -63,9 +67,11 @@
                                 Reglas de negocio
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Requerimientos funcionales (RF)</a>
-                                <a class="dropdown-item" href="#">Requerimientos no funcionales(RNF)</a>
-                                <a class="dropdown-item" href="#">Restricciones(RX)</a>
+                                <a class="dropdown-item" href="requisitosFuncionales.html">Requerimientos funcionales
+                                    (RF)</a>
+                                <a class="dropdown-item" href="requisitosNoFuncionales.html">Requerimientos no
+                                    funcionales(RNF)</a>
+                                <a class="dropdown-item" href="requrimientosSistema.html">Restricciones(RX)</a>
                             </div>
                         </li>
                     </ul>
@@ -146,9 +152,8 @@
             <!-- Topbar -->
             <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
                 <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                    <i class="fa fa-bars"></i>
                 </button>
-                <h1 class="h3 mb-2 text-gray-800">Roles de equipo</h1>
+                <h1 class="h3 mb-2 text-gray-800">Reglas de negocio</h1>
             </nav>
             <!-- End of Topbar -->
             <!-- Fin Navbar -->
@@ -156,57 +161,61 @@
 
 
             <!-- Page Content -->
-            <div class="container">
-                <div class="row">
-                    <div class="card-header py-8">
-                        <!-- Card Header - Accordion -->
-                        <a href="#collapse3" class="d-block card-header py-3" data-toggle="collapse" role="button"
-                            aria-expanded="true" aria-controls="collapseCardExample">
-                            <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-cogs mr-2"></i>Análista
-                            </h6>
-                        </a>
-                        <div class="collapse" id="collapse3">
-                            <div class="card-body">
-                                <img src="assets/img/jurian.jpg" class="imgRedonda">
-                                <p>Leon Torres Guadalupe Jurian</p>
-                            </div>
+            <div class="container-fluid text-gray-900">
+                <div class="col">
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Requerimientos no funcionales</h6>
+                        </div>
+                        <div class="card-body">
+                            <p>RNF1. La interfaz de usuario será implementada para navegadores web únicamente con HTML5
+                                y CSS3.
+                            </p>
+                            <p>RNF2. Los registros son almacenados en minúsculas y mayúsculas en los archivos xml.
+                            </p>
+                            <p>RFN3. Todos los datos modificados en los archivos xml deben ser actualizados para el
+                                administrador.
+                            </p>
+                            <p>RNF4. El sistema será codificado en el ambiente de desarrollo Netbeans en su versión 8.2
+                                en un ambiente operativo Windows 10.</p>
+                            <p>RNF5. El sistema debe desarrollarse aplicando el paradigma de diseño orientado a objetos.
+                            </p>
+                            <p>RNF6. El sistema debe poseer interfaces gráficas simples.
+                            </p>
+                            <p>RNF7. El sistema maneja archivos xml manteniendo la persistencia de los datos en todo
+                                momento.
+                            </p>
+                            <p>RNF8. Los identificadores únicos de cada registro en la base de datos no serán
+                                visualizados en las interfaces gráficas de cliente.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-            <div class="container">
-                <div class="row">
-                    <div class="col">Analista</div>
-                    <p>El sistema permite:</p>
-                    <div class="col">Column</div>
-                    <div class="w-100"></div>
-                    <div class="col">Column</div>
-                    <div class="col">Column</div>
-                    <div class="w-100"></div>
-                    <div class="col">Column</div>
-                </div>
-            </div>
-
-            <!--Final page content-->
-
-
-
-
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
-                integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
         </div>
+
+
+
+
+
+        <!--Final page content-->
+
+
+
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
+            integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>
