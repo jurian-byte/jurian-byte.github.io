@@ -60,6 +60,7 @@
                     <a href="reglasNegocio.html" .html" class="d-block text-light p-3 border-0"><i
                             class="icon ion-md-book mr-2"></i></i>
                         Reglas de negocio</a>
+
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link text-light dropdown-toggle p-3 border-0" href="#" id="navbarDropdown"
@@ -77,6 +78,7 @@
                         </li>
                     </ul>
 
+
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link text-light dropdown-toggle p-3 border-0" href="#" id="navbarDropdown"
@@ -87,7 +89,7 @@
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
-                                <a class="dropdown-item" href="casosUso.html">Casos de uso</a>
+                                <a class="dropdown-item" href="#">Casos de uso</a>
                                 <a class="dropdown-item" href="diagramaCasosUso.html">Diagrama de casos de uso</a>
                             </div>
                         </li>
@@ -108,10 +110,9 @@
                                 Modelo de dominio
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="heuristica.html">Heurísticas del descubrimiento
+                                <a class="dropdown-item" href="#">Heurísticas del descubrimiento
                                     de abstracciones clave del sistema</a>
                                 <a class="dropdown-item" href="CRCs.html">Tarjetas CRC</a>
-
                                 <a class="dropdown-item" href="diagramaAct.html">Diagrama de actividades</a>
                                 <a class="dropdown-item" href="diagramaPaquete.html">Diagrama de paquetes</a>
                             </div>
@@ -151,9 +152,8 @@
             <!-- Navbar -->
             <!-- Topbar -->
             <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                </button>
-                <h1 class="h3 mb-2 text-gray-800">Reglas de negocio</h1>
+
+                <h1 class="h3 mb-2 text-gray-800">Análisis de robustez</h1>
             </nav>
             <!-- End of Topbar -->
             <!-- Fin Navbar -->
@@ -161,101 +161,109 @@
 
 
             <!-- Page Content -->
-            <div class="container-fluid text-gray-900">
-                <div class="col">
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Requerimientos funcionales</h6>
-                        </div>
+            <div class="col">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Accordion -->
+                    <a href="#collapse1" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                        aria-expanded="true" aria-controls="collapseCardExample">
+                        <h6 class="m-0 font-weight-bold text-primary"><i
+                                class="fas fa-address-card mr-2"></i>Identificación en la aplicacion
+                        </h6>
+                    </a>
+                    <div class="collapse" id="collapse1">
                         <div class="card-body">
-                            <p>RF1. El sistema maneja un registro de clientes el cual almacenará el nombre del cliente,
-                                usuario, número telefónico y contraseña.
-                            </p>
-                            <p>RF2. El sistema maneja un registro de productos el cual almacenará el nombre del
-                                producto, precio, descripción, id del proveedor, nombre de la imagen y el id de
-                                categoría al que pertenece.
-                            </p>
-                            <p>RF3. El sistema maneja un registro de proveedores el cual almacenará el nombre del
-                                proveedor y teléfono.
-                            </p>
-                            <p>RF4. El sistema maneja un registro de ventas el cual almacenará el usuario del cliente,
-                                el id del producto, el nombre del producto, la descripción del producto, el precio del
-                                producto, la categoría del producto, la imagen del producto, el precio calculado, la
-                                cantidad del producto, el total pagado, la fecha de la venta, el tipo de transacción y
-                                la forma de pago.
-                            </p>
-                            <p>RF5. El sistema maneja un registro de productos añadidos al carrito en el cual se
-                                almacenará el usuario del cliente, el id del producto, el nombre del producto, la
-                                descripción del producto, el precio del producto, la categoría del producto, la imagen
-                                del producto, el precio calculado, la cantidad del producto y la disponibilidad.
-                            </p>
-                            <p>RF6. A cada registro que maneja el sistema se le asignará un id único, que será utilizado
-                                para identificarlo en todos los procesos que se realicen sobre este.</p>
-                            <p>RF7. No se permitirá el registro de algún dato con campos incompletos, estos deben ser
-                                obligatorios.
-                            </p>
-                            <p>RF9. El sistema controlará el acceso y, según el usuario y la contraseña, identificará si
-                                el usuario es administrador o cliente.
-                            </p>
-                            <p>RF10. Solo el administrador podrá añadir información, visualizarla, modificarla y
-                                eliminarla, para cualquiera de los registros, menos de carrito.
-                            </p>
-                            <p>RF11. El sistema debe poder emitir un archivo con extensión PDF con información de los
-                                productos cuando el administrador elige la opción de generar PDF.
-                            </p>
-                            <p>RF12. El sistema debe poder leer, modificar, agregar y eliminar datos en archivos xml.
-                            </p>
-                            <p>RF13. Cuando un usuario del tipo cliente elige la opción de logout, el sistema eliminará
-                                los registros almacenados del carrito.
-                            </p>
-                            <p>RF14. El sistema debe validar los campos de los formularios, para campos numéricos como
-                                cantidad solo debe permitir introducir números.
-                            </p>
-                            <p>RF15. El sistema permite al cliente elegir la cantidad de un mismo producto, al agregarla
-                                al carrito mostrará una pantalla con los datos del producto que se eligió para confirmar
-                                que se agregue al carrito.
-                            </p>
-                            <p>RF16. El sistema permitirá visualizar los productos agregados al carrito y poder
-                                eliminarlos de él, antes de generar la venta.
-                            </p>
-                            <p>RF17. El sistema cuenta con un buscador de productos que permite buscar directamente
-                                productos. A partir de la búsqueda se mostrará un listado de productos que cumplan los
-                                criterios indicados.
-                            </p>
-                            <p>RF18. El sistema cuenta con buscadores por categoría. A partir de la categoría
-                                seleccionada se mostrará un listado de productos que cumplan con el criterio
-                                seleccionado.
-                            </p>
+                            <div class="text-center">
+                                <img src="assets/img/identificacionRobustez.jpeg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Accordion -->
+                    <a href="#collapse2" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                        aria-expanded="true" aria-controls="collapseCardExample">
+                        <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-cart-plus mr-2"></i>Añadir
+                            articulos
+                        </h6>
+                    </a>
+                    <div class="collapse" id="collapse2">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="assets/img/agregarProductoRobustez.jpeg">
+                            </div>
 
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
+
+
+            <div class="col">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Accordion -->
+                    <a href="#collapse3" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                        aria-expanded="true" aria-controls="collapseCardExample">
+                        <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-store mr-2"></i>Administrar
+                            ventas
+                        </h6>
+                    </a>
+                    <div class="collapse" id="collapse3">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="assets/img/adminVentasRobustez.jpeg">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Accordion -->
+                    <a href="#collapse4" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                        aria-expanded="true" aria-controls="collapseCardExample">
+                        <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-book mr-2"></i>Administrar
+                            clientes
+                        </h6>
+                    </a>
+                    <div class="collapse" id="collapse4">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="assets/img/AdminClientesRobustez.jpeg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Final page content-->
+
+
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
+                integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
         </div>
-
-
-
-
-
-        <!--Final page content-->
-
-
-
-
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
-            integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
-    </div>
 </body>
 
 </html>
