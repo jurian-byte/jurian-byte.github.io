@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Login</title>
+    <title>Administrar Proveedores</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Google Fonts Roboto -->
@@ -37,7 +37,7 @@
     <!-- Collapsible wrapper -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Navbar brand -->
-      <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+      <a class="navbar-brand mt-2 mt-lg-0" href="Administrador.html">
         <img
           src="img/I.png" 
           height="15"
@@ -49,7 +49,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
   
         <li class="nav-item">
-          <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio  </a>
+          <a class="nav-link" href="Administrador.html"><i class="fas fa-home"></i> Inicio  </a>
         </li>
         
         
@@ -61,30 +61,19 @@
             data-mdb-toggle="dropdown"
             aria-expanded="false"
           >
-            CATEGORIAS
+            ADMINISTRACION
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item active" href="Joyeria.html"><i class="far fa-gem"></i> Joyeria</a></li>
-            <li><a class="dropdown-item" href="Ropa.html"><i class="fas fa-tshirt"></i> Ropa</a></li>
-            <li><a class="dropdown-item" href="Zapatos.html"><i class="fas fa-shoe-prints"></i> Zapatos</a></li>
-            <li><a class="dropdown-item" href="Maquillaje.html"><i class="far fa-eye"></i> Maquillaje</a></li>
-            <li><a class="dropdown-item" href="CuidadoPersonal.html"><i class="fab fa-envira"></i> Cuidado Personal</a></li>
-            <li><a class="dropdown-item" href="Suplementos.html"><i class="fas fa-capsules"></i> Suplementos Alimenticios</a></li>
-            <li><a class="dropdown-item" href="CuidadoHogar.html"><i class="fab fa-canadian-maple-leaf"></i> Cuidado del Hogar</a></li>
+            <li><a class="dropdown-item active" href="AdministrarClientes.html"><i class="fab fa-codepen"></i> Clientes</a></li>
+            <li><a class="dropdown-item" href="AdministrarProductos.html"><i class="fab fa-codepen"></i> Productos</a></li>
+            <li><a class="dropdown-item" href="AdministrarVentas.html"><i class="fab fa-codepen"></i> Ventas</a></li>
+            <li><a class="dropdown-item" href="AdministrarProveedores.html"><i class="fab fa-codepen"></i> Proveedores</a></li>
             
+
           </ul>
         </div>
-        <li class="nav-item">
-          <a class="nav-link" href="Catalogo.html"><i class="fab fa-slack"></i> Catalogo  </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="SobreNosotros.html"><i class="far fa-question-circle"></i> Sobre nosotros  </a>
-        </li>
+        
          
-          
-        <li class="nav-item">
-          <a class="nav-link" href="Contacto.html"><i class="far fa-envelope-open"></i> Contacto</a>
-        </li>
        
         
       </ul>
@@ -95,49 +84,14 @@
     <!-- Right elements -->
     <div class="d-flex align-items-center">
       <!-- Icon -->
-      <a class="text-reset me-3" href="Carrito.html">
-        <i class="fas fa-shopping-cart"></i>
-      </a>
 
       
      
-      <!-- Avatar -->
-       <!-- SOLO FUNCIONARIA CUANDO YA SE HAYA INICIADO SESION
-      <a
-        class="dropdown-toggle d-flex align-items-center hidden-arrow"
-        href="#"
-        id="navbarDropdownMenuLink"
-        role="button"
-        data-mdb-toggle="dropdown"
-        aria-expanded="false"
-      >
       
-        <img
-          src="img/PERSON.png"
-          class="rounded-circle"
-          height="25"
-          alt=""
-          loading="lazy"
-        />
-      </a>
-      <ul
-        class="dropdown-menu dropdown-menu-end"
-        aria-labelledby="navbarDropdownMenuLink"
-      >
-        <li>
-          <a class="dropdown-item" href="#">Mi perfil</a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="#">Mis pedidos</a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="#">Cerrar Sesion</a>
-        </li>
-      </ul>
-      -->
-      <!-- AVATAR -->
+      
 
     <!--LOGIN INICIAR SESION-->
+    <!-- 
       <div class="d-flex align-items-center">
         <a href="Login.html"> 
           <button type="button" class="btn btn-link px-3 me-2"  >
@@ -150,27 +104,42 @@
           </button>
         </a>  
       </div>
+    -->
     <!--LOGIN INICIAR SESION-->
-
     
-    <!-- BUSCAR -->
-    <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-        <form class="d-flex input-group w-auto">
-          <input
-            type="search"
-            class="form-control rounded"
-            placeholder="Buscar"
-            aria-label="Buscar"
-            aria-describedby="search-addon"
-          />
-          <span class="input-group-text border-0" id="search-addon">
-            <i class="fas fa-search"></i>
-          </span>
-        </form>
-      </div>
-    </nav>
-    <!-- BUSCAR -->
+    <!-- Avatar -->
+       <!-- SOLO FUNCIONARIA CUANDO YA SE HAYA INICIADO SESION-->
+       <a
+       class="dropdown-toggle d-flex align-items-center hidden-arrow"
+       href="#"
+       id="navbarDropdownMenuLink"
+       role="button"
+       data-mdb-toggle="dropdown"
+       aria-expanded="false"
+     >
+     
+       <img
+         src="img/PERSON.png"
+         class="rounded-circle"
+         height="25"
+         alt=""
+         loading="lazy"
+       />
+     </a>
+     <ul
+       class="dropdown-menu dropdown-menu-end m-3"
+       aria-labelledby="navbarDropdownMenuLink"
+     >
+       <li>
+         <a class="dropdown-item" href="#">Mi perfil</a>
+       </li>
+       <li>
+         <a class="dropdown-item" href="index.html">Cerrar Sesion</a>
+       </li>
+     </ul>
+     
+     <!-- AVATAR -->
+
     </div>
     
     <!-- Right elements -->
@@ -183,47 +152,47 @@
   <main>
     <div class="container">
       <hr class="my-5">
-      <hr class="my-5">
-      
+     
       <!--Section: Main features & Quick Start-->
       <section>
-        <h3 class="h3 text-center mb-5">Log In</h3>
-        <div class="row">
-            <div class="row g-3 align-items-center">
-            <div class="input-group flex-nowrap">
-            <span class="input-group-text" id="addon-wrapping">@</span>
-            <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario"
-              aria-describedby="addon-wrapping" />
-            </div>
-        </div>
-        </div>
-        <figure class="text-center"> 
-            <div class="row">
-                <div class="row g-3 align-items-center">
-                    <div class="form-outline col-auto">
-                        <input
-                            type="password"
-                            id="formTextExample2"
-                            class="form-control"
-                            aria-describedby="textExample2"
-                        />
-                        <label class="form-label" for="formTextExample2">Contraseña</label>
-                    </div>
-                    <div class="col-auto">
-                        <span id="textExample2" class="form-text"> Debe ser 8-20 caracteres </span>
-                    </div>
-                </div>
-            </div>
-        </figure>
-        <div class="row">
-        <div class="col-12">
-          <a href="Administrador.html"> 
-            <button class="btn btn-primary m-3" type="submit">Iniciar Sesion</button>
-          </a>
+        <h3 class="h3 text-center mb-5">PROVEEDORES</h3>
+        <h3 class="h3 text-center mb-5">Crear, Altas, Bajas y Cambios</h3>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nombre de proveedor</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Fa</th>
+                <td><button type="button" class="btn btn-primary">Leer</button></td>
+                <td><button type="button" class="btn btn-primary">Modificar</button></td>
+                <td><button type="button" class="btn btn-primary">Eliminar</button></td>
+              </tr>
+              <tr>
+                <th scope="row">Sol</th>
+                <td><button type="button" class="btn btn-primary">Leer</button></td>
+                <td><button type="button" class="btn btn-primary">Modificar</button></td>
+                <td><button type="button" class="btn btn-primary">Eliminar</button></td>
+              </tr>
+              <tr>
+                <th scope="row">La</th>
+                <td><button type="button" class="btn btn-primary">Leer</button></td>
+                <td><button type="button" class="btn btn-primary">Modificar</button></td>
+                <td><button type="button" class="btn btn-primary">Eliminar</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="d-grid gap-2">
+            <button class="btn btn-outline-dark" data-mdb-ripple-color="dark" type="button">Crear nuevo Cliente</button>
           </div>
-        </div>
       </section>
-      <!--Section: More-->
+      <!--Section:Categorias-->
       <section>
 
         <h2 class="my-5 h3 text-center"></h2>
@@ -241,7 +210,7 @@
               <div class="col-10 mb-2 pl-3">
                 <h5 class="feature-title font-bold mb-1"></h5>
                 <p class="grey-text mt-2"> 
-                    <i class="fas fa-angle-double-right fa-10x"></i>
+                    <i class="fas fa-angle-double-right fa-8x"></i>
                 </p>
               </div>
             </div>
@@ -259,7 +228,7 @@
               <div class="col-10 mb-2">
                 <h5 class="feature-title font-bold mb-1"></h5>
                 <p class="grey-text mt-2">
-                    <i class="fas fa-angle-double-right fa-10x"></i>
+                  <i class="fas fa-ellipsis-h fa-8x"></i>
                 </p>
               </div>
             </div>
@@ -277,7 +246,7 @@
               <div class="col-10 mb-2">
                 <h5 class="feature-title font-bold mb-1"></h5>
                 <p class="grey-text mt-2">
-                    <i class="fas fa-angle-double-right fa-10x"></i>
+                    <i class="fas fa-angle-double-right fa-8x"></i>
                 </p>
               </div>
             </div>
@@ -295,7 +264,7 @@
               <div class="col-10 mb-2">
                 <h5 class="feature-title font-bold mb-1"></h5>
                 <p class="grey-text mt-2">
-                    <i class="fas fa-angle-double-right fa-10x"></i>
+                  <i class="fas fa-ellipsis-h fa-8x"></i>
                 </p>
               </div>
             </div>
@@ -307,7 +276,6 @@
         <!--/First row-->
 
       </section>
-      <!--Section: More-->
     </div>
   </main>
   <!--Main layout-->
