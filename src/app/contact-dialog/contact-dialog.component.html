@@ -1,0 +1,56 @@
+<p-dialog  [(visible)]="visible" [style]="{width: '50vw'}" [modal]="true" [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false" [breakpoints]="{'600px': '75vw' }"  [style]="{ width: '50vw' }" (onHide)="closeDialog()">
+    <div class="content-view custom-container">
+      <nav class="custom-nav">
+      </nav>
+      <div class="logo-container">
+        <div class="around-image">
+          <img
+            class="custom-logo"
+            src="assets/projects/jurianNegro.png"
+            alt="logo"
+          />
+        </div>
+      </div>
+    </div>
+        <div class="title-container">
+          <p class="title">
+            Si tienes alguna pregunta o quieres trabajar conmigo, no dudes en
+            contactarme.
+          </p>
+        </div>
+
+        <form #emailForm="ngForm" (ngSubmit)="emailForm.valid && enviarEmail()">
+        <div class="container-form">
+          <div class="formgrid grid">
+            <div class="field col">
+              <label for="nombre">Nombre</label>
+              <input class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full" type="text" name="name" [(ngModel)]="name" #nameField="ngModel" required>
+              <div *ngIf="nameField.errors?.['required'] && nameField.touched">El nombre es obligatorio.</div>
+            </div>
+
+
+
+            <div class="field col">
+              <label for="asunto">Asunto</label>
+              <input class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"  type="text" name="subject" [(ngModel)]="subject" #subjectField="ngModel" required>
+            <div *ngIf="subjectField.errors?.['required'] && subjectField.touched">El asunto es obligatorio.</div>
+            </div>
+
+
+            <div class="field col-12">
+              <label for="mensaje">Mensaje</label>
+              <textarea class="mensaje-text text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full" style="font-family: Arial, sans-serif;"  name="body" [(ngModel)]="body" #bodyField="ngModel" required></textarea>
+              <div *ngIf="bodyField.errors?.['required'] && bodyField.touched">El mensaje es obligatorio.</div>
+            </div>
+
+            <div class="container-button">
+              <button class="button btn-contact is-outlined"  type="submit" [disabled]="!emailForm.valid">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </form>
+<p-toast></p-toast>
+
+</p-dialog>
+
+

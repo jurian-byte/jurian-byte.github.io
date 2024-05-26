@@ -25,7 +25,6 @@
   .logo img {
     width: 150px;
     height: auto;
-    margin-top: -50px;
   }
 
   .custom-logo {
@@ -49,7 +48,7 @@
   .navbar-end li {
     flex-grow: 1;
     display: inline;
-
+    margin-right: 20px;
   }
   .navbar-end li:last-child {
     margin-right: 0;
@@ -69,48 +68,3 @@
     color: white;
     transition: color 0.3s ease;
   }
-
-
-
-
-@media (max-width: 600px) {
-    .custom-nav {
-      flex-direction: column;
-    }
-
-    .navbar-end {
-      margin-top: 10px;
-      justify-content: center;
-    }
-
-    .navbar-end li {
-      margin-right: 0;
-      margin-bottom: 10px;
-      font-size: small;
-    }
-
-    .logo {
-      margin-top: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .logo img {
-      width: 60px;
-      margin-top: -30px;
-    }
-
-
-    .custom-nav {
-      height: 52px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 100%;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-}
-
