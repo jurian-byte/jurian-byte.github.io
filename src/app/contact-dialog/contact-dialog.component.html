@@ -22,9 +22,9 @@
           <div *ngIf="nameField.errors?.['required'] && nameField.touched">El nombre es obligatorio.</div>
         </div>
         <div class="field col">
-          <label for="asunto">Asunto</label>
+          <label for="asunto">Contacto</label>
           <input class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full" type="text" name="subject" [(ngModel)]="subject" #subjectField="ngModel" required />
-          <div *ngIf="subjectField.errors?.['required'] && subjectField.touched">El asunto es obligatorio.</div>
+          <div *ngIf="subjectField.errors?.['required'] && subjectField.touched">El contacto es obligatorio.</div>
         </div>
         <div class="field col-12">
           <label for="mensaje">Mensaje</label>
