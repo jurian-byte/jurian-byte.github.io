@@ -11,9 +11,10 @@ import { MessageService } from 'primeng/api';
   name: string = '';
   subject: string = '';
   body: string = '';
+  isSubmitting: boolean = false;
 
-  @Input() visible: boolean = false;  // Controla la visibilidad del diálogo
-  @Output() visibleChange = new EventEmitter<boolean>();  // Emite cambios al padre
+  @Input() visible: boolean = false;
+  @Output() visibleChange = new EventEmitter<boolean>();
 
   constructor(
     private emailService: EmailService,
@@ -21,9 +22,15 @@ import { MessageService } from 'primeng/api';
   ) {}
 
   enviarEmail(): void {
+    if (this.isSubmitting) {
+      return;
+    }
+    this.isSubmitting = true;  // Desactiva el botón al comenzar el envío
+
     this.emailService.sendEmail(this.name, this.subject, this.body)
       .subscribe(
         response => {
+          this.isSubmitting = false;
           this.closeDialog();
           this.name = '';
           this.subject = '';
@@ -35,6 +42,7 @@ import { MessageService } from 'primeng/api';
           });
         },
         error => {
+          this.isSubmitting = false;
           console.error('Error al enviar correo electrónico:', error);
           this.messageService.add({
             severity: 'error',

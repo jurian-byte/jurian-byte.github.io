@@ -1,4 +1,5 @@
 import { Component, OnInit, ElementRef,ViewChild, AfterViewInit} from '@angular/core';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-projects',
@@ -35,11 +36,11 @@ export class ProjectsComponent implements OnInit, AfterViewInit{
     constructor() {
 
       this.projects = [
-        { id: '1',title: 'Tareas', imageUrl: 'assets/projects/tasks.png', linkUrl: 'https://pacific-spire-65839-b62b03a951e8.herokuapp.com/', description: 'Aplicación creada con react y backend desarrollado en Go ',githubUrl:'https://github.com/jurian-byte/tasksFront' },
+        { id: '1',title: 'Tareas', imageUrl: 'assets/projects/tasks.png', linkUrl: 'https://pacific-spire-65839-b62b03a951e8.herokuapp.com/', description: 'Aplicación creada con react y backend desarrollado en Go ',githubUrl:'https://github.com/jurian-byte/tasksFront',githubB:'https://github.com/jurian-byte/tasks', icons: ['fab fa-react', 'fab fa-golang']},
 
         { id: '2',title: 'Gestión bibliotecaria', imageUrl: 'assets/projects/sabe.png', linkUrl: 'https://drive.google.com/drive/folders/190xiGwZqElD8fk9p-E2Z1J2FbZ0RIgg4?usp=sharing', description: 'Aplicación creada con Angular',
-        githubUrl:'https://github.com/jurian-byte/SABEfront'},
-        { id: '3',title: 'App de clima',imageUrl: 'assets/projects/weather-app.png', linkUrl: 'https://young-wave-15612-ebd929ea1655.herokuapp.com/' , description: 'Aplicación creada con react consumiendo open-meteo',githubUrl:'https://github.com/jurian-byte/weather-app' },
+        githubUrl:'https://github.com/jurian-byte/SABEfront', icons: ['fab fa-angular', 'fab fa-golang']},
+        { id: '3',title: 'App de clima',imageUrl: 'assets/projects/weather-app.png', linkUrl: 'https://young-wave-15612-ebd929ea1655.herokuapp.com/' , description: 'Aplicación creada con react consumiendo open-meteo',githubUrl:'https://github.com/jurian-byte/weather-app', icons: ['fab fa-react']},
 
       ];
 

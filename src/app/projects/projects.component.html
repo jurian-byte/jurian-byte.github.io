@@ -10,6 +10,11 @@
       <p-carousel [value]="projects" [numVisible]="3" [numScroll]="1" [responsiveOptions]="responsiveOptions">
         <ng-template let-project pTemplate="item">
           <div class="projects-item">
+
+            <div class="titleP">
+              <span>{{project.title}}</span>
+            </div>
+
             <div class="mb-3 centered-content">
               <a [href]="project.linkUrl" target="_blank" class="image-container">
                 <img [src]="project.imageUrl" class="project-image" />
@@ -19,9 +24,21 @@
               </a>
               <div class="github-link">
                 <a [href]="project.githubUrl" target="_blank">
-                  <i class="fab fa-github"></i>Ver código
+                  <ng-container *ngFor="let icon of project.icons">
+                    <i *ngIf="icon.includes('react') || icon.includes('angular')" [class]="icon"></i>
+                  </ng-container>
+                  Ver código
+                </a>
+                <a *ngIf="project.githubB" [href]="project.githubB" target="_blank">
+                  <ng-container *ngFor="let icon of project.icons">
+                    <i *ngIf="icon.includes('golang')" [class]="icon"></i>
+                  </ng-container>
+                  Ver código back-end
                 </a>
               </div>
+
+
+
             </div>
           </div>
         </ng-template>
