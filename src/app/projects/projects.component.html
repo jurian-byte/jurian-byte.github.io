@@ -7,16 +7,29 @@
     </div>
 
     <div class="card">
-        <p-carousel [value]="projects" [numVisible]="3" [numScroll]="1" [responsiveOptions]="responsiveOptions">
-            <ng-template let-project pTemplate="item">
-                <div class="projects-item">
-                    <div class="mb-3 centered-content">
-                        <img src="/assets/projects/prueba.jpg" style="max-width: 300px;"/>
-                    </div>
+      <p-carousel [value]="projects" [numVisible]="3" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+        <ng-template let-project pTemplate="item">
+          <div class="projects-item">
+            <div class="mb-3 centered-content">
+              <a [href]="project.linkUrl" target="_blank" class="image-container">
+                <img [src]="project.imageUrl" class="project-image" />
+                <div class="project-description">
+                  <div class="description-content">{{ project.description }}</div>
                 </div>
-            </ng-template>
-        </p-carousel>
+              </a>
+              <div class="github-link">
+                <a [href]="project.githubUrl" target="_blank">
+                  <i class="fab fa-github"></i>Ver código
+                </a>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
     </div>
+
+
+
 </section>
 </div>
 

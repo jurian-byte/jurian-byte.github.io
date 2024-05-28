@@ -4,8 +4,7 @@
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  position: relative;
-  background-color: #f3d0cb;
+  position: relative;background-color: #f3d0cb;
   padding: 1rem 1.5rem 4rem;
   color: #fff;
 }
@@ -55,9 +54,9 @@
 }
 
 .title-start-project {
-    color: #333; /* Color oscuro para contrastar con el fondo claro */
-    font-size: 28px; /* Tamaño de fuente más grande para dar énfasis */
-    margin-bottom: 20px; /* Espacio debajo del título para separación */
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -301,7 +300,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Centra el botón verticalmente en la vista */
+  height: 100vh;
 }
 
 .button {
@@ -335,3 +334,25 @@
 
 
 
+
+.github-link {
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-link a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.github-link i {
+  margin-right: 5px;
+  font-size: 1rem;
+}

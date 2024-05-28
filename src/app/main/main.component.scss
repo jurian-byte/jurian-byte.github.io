@@ -1,70 +1,79 @@
-
 .main-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #f3d0cb;
-    width: 100%;
-  }
-
-  .custom-nav {
-    background-color: #f3d0cb;
-    height: 66px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-    width: 100%;
-    padding: 10px;
-  }
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .logo img {
-    width: 150px;
-    height: auto;
-  }
-
-  .custom-logo {
-    height: 300px;
-    width: 300px;
-    margin-left: 10px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f3d0cb;
+  width: 100%;
+}
 
 .custom-nav {
-    display: flex;
-    justify-content: center;
-  }
-  .navbar-end {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-  .navbar-end li {
-    flex-grow: 1;
-    display: inline;
-    margin-right: 20px;
-  }
-  .navbar-end li:last-child {
-    margin-right: 0;
-  }
-  .navbar-end li a {
+  position: fixed;
+  top: 0; /* Asegura que esté en la parte superior */
+  background-color: #f3d0cb;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra para un efecto de elevación */
+}
 
-    color: black;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
-  .navbar-end li a:hover {
-    color: white;
-    transition: color 0.3s ease;
-  }
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.custom-logo {
+  height: 300px;
+  width: 300px;
+  margin-left: 10px;
+}
+
+.custom-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-end {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navbar-end li {
+  flex-grow: 1;
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar-end li:last-child {
+  margin-right: 0;
+}
+
+.navbar-end li a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.navbar-end li a:hover {
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
