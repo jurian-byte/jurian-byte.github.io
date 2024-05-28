@@ -13,6 +13,6 @@ export class EmailService {
 
   sendEmail(name: string, subject: string, body: string): Observable<any> {
     const email = { name, subject, body };
-    return this.http.post('http://localhost:8080/send-email', email);
+    return this.http.post('https://frozen-lowlands-04435-a5bc50d88e2b.herokuapp.com/send-email', email);
   }
 }

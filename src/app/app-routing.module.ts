@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'contacto', component: FooterComponent},
   {path:'proyectos',component:ProjectsComponent},
   {path:'', redirectTo: '/inicio', pathMatch: 'full'},
-  {path:'**', component: NotFoundComponent}
+  {path:'*', component: NotFoundComponent}
 
 ];
 
