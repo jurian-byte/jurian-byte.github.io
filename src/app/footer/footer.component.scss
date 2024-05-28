@@ -219,30 +219,6 @@
   }
 }
 
-/* //tablet
-@media print,
-  screen and (min-width:) and (max-width: 1200px) {
-  .title-start-project {
-    font-size: 1.5rem;
-  }
-  .start-project {
-    span {
-      font-size: 0.9rem;
-    }
-
-    button {
-      font-size: 1rem;
-    }
-  }
-  .container-start-project {
-    padding: 2.5rem 1.25rem;
-  }
-}
-
-//desktop
-@media print, screen and (min-width: $min-screen-desktop) {
-} */
-
 
 .container-form {
   display: flex;

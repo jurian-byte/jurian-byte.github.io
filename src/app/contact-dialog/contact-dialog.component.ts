@@ -25,8 +25,7 @@ import { MessageService } from 'primeng/api';
     if (this.isSubmitting) {
       return;
     }
-    this.isSubmitting = true;  // Desactiva el botón al comenzar el envío
-
+    this.isSubmitting = true;
     this.emailService.sendEmail(this.name, this.subject, this.body)
       .subscribe(
         response => {

@@ -14,22 +14,22 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 7rem;
-  height: 100%; /* Asegura que el contenedor ocupe todo el espacio vertical */
+  height: 100%;
 }
 
 .projects-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribuir espacio entre elementos */
+  justify-content: space-between;
   align-items: center;
-  height: 100%; /* Asegura que el contenedor ocupe todo el espacio vertical */
+  height: 100%;
 }
 
 .image-container {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centrar la imagen verticalmente */
+  justify-content: center;
   align-items: center;
   max-width: 300px;
   overflow: hidden;
@@ -55,6 +55,7 @@
   height: 100%;
   background-color: rgba(242, 230, 223, 0.5);
   color: black;
+  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
